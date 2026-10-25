@@ -1,0 +1,4 @@
+[
+  { "title": "Bahor: анимированный логотип", "category": "Заставки", "video": "works/bahorcakes_intro.mp4", "poster": "works/bahorcakes_intro.jpg", "text": "Заставка для кондитерской, 18 секунд" },
+  { "title": "Kaluputics: мультфильм", "category": "Видео", "video": "works/kaluputics_cartoon.mp4", "poster": "works/kaluputics_cartoon.jpg", "fit": "contain", "text": "Анимированный ролик, вертикальный формат, 28 секунд" }
+]

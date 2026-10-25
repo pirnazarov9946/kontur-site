@@ -1,178 +1,171 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
+<html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Студия «Контур» — логотипы, видео, сайты</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F6F5FB;--ink:#16132B;--mute:#5E5A78;--line:#D9D6EA;--card:#FFFFFF;--v:#4F35F2;--p:#FF5C8A;--y:#FFC93C;--onv:#FFFFFF;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13112A;--ink:#F3F1FF;--mute:#A9A5C7;--line:#2E2A55;--card:#1C1940;--v:#8C79FF}}
-:root[data-theme="dark"]{--bg:#13112A;--ink:#F3F1FF;--mute:#A9A5C7;--line:#2E2A55;--card:#1C1940;--v:#8C79FF}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,sans-serif}
-h1,h2,h3{font-family:Unbounded,Onest,system-ui,sans-serif;line-height:1.1;margin:0}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--p);outline-offset:3px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
-.logo{font:700 20px Unbounded,sans-serif;text-decoration:none}
-nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-weight:500}
-nav a:hover{color:var(--ink)}
-.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding:48px 0 80px}
-.hero h1{font-size:clamp(34px,5.6vw,64px);font-weight:700;letter-spacing:-.02em}
-.hero p{max-width:30em;color:var(--mute);font-size:19px;margin:24px 0 32px}
-.btn{display:inline-block;background:var(--v);color:var(--onv);padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:0;font:600 17px Onest,sans-serif;cursor:pointer}
-.btn:hover{background:var(--p)}
-.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line);margin-left:10px}
-.btn.alt:hover{border-color:var(--ink);background:transparent}
-.art{position:relative;aspect-ratio:1;width:100%;max-width:420px;justify-self:center}
-.art i{position:absolute;display:block}
-.art .c{width:56%;aspect-ratio:1;background:var(--v);border-radius:50%;left:0;top:6%;animation:m1 7s ease-in-out infinite alternate}
-.art .s{width:46%;aspect-ratio:1;background:var(--p);right:0;top:28%;border-radius:12%;animation:m2 7s ease-in-out infinite alternate}
-.art .t{width:40%;aspect-ratio:1;background:var(--y);left:30%;bottom:0;clip-path:polygon(50% 0,100% 100%,0 100%);animation:m3 7s ease-in-out infinite alternate}
-@keyframes m1{to{border-radius:12%;transform:rotate(45deg)}}
-@keyframes m2{to{border-radius:50%;transform:translate(-18%,-6%)}}
-@keyframes m3{to{transform:translateY(-12%) rotate(180deg)}}
-section{padding:72px 0;border-top:1px solid var(--line)}
-section>.wrap>h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:12px}
-.lead{color:var(--mute);max-width:36em;margin:0 0 36px}
-.svc{display:grid;grid-template-columns:1fr 1.1fr;gap:32px;align-items:start}
-.list{display:flex;flex-direction:column;gap:6px}
-.list button{display:flex;justify-content:space-between;align-items:center;text-align:left;width:100%;padding:16px 20px;border-radius:16px;border:2px solid transparent;background:transparent;color:var(--ink);font:500 19px Onest,sans-serif;cursor:pointer}
-.list button:hover{background:var(--card)}
-.list button[aria-selected="true"]{background:var(--card);border-color:var(--v)}
-.list small{color:var(--mute);font-size:15px}
-.panel{background:var(--card);border-radius:24px;padding:32px;min-height:300px;border:1px solid var(--line)}
-.panel h3{font-size:24px;margin-bottom:14px}
-.panel p{color:var(--mute);margin:0 0 18px}
-.panel ul{margin:0 0 22px;padding-left:20px}
-.panel li{margin:4px 0}
-.panel .term{font-weight:600}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s;list-style:none;padding:0;margin:0}
-.steps li{counter-increment:s;border-top:4px solid var(--v);padding-top:16px}
-.steps li::before{content:counter(s);font:700 28px Unbounded,sans-serif;color:var(--v)}
-.steps h3{font-size:18px;margin:8px 0}
-.steps p{margin:0;color:var(--mute);font-size:16px}
-form{display:grid;gap:14px;max-width:520px}
-label{font-weight:600;font-size:15px}
-input,select,textarea{width:100%;margin-top:6px;padding:14px 16px;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:400 17px Onest,sans-serif}
-textarea{min-height:110px;resize:vertical}
-footer{padding:36px 0;color:var(--mute);border-top:1px solid var(--line);font-size:15px}
-@media (max-width:820px){
-.hero,.svc{grid-template-columns:1fr}
-.steps{grid-template-columns:1fr 1fr}
-nav a:not(:last-child){display:none}
-.art{max-width:260px}}
-@media (max-width:480px){.steps{grid-template-columns:1fr}.btn.alt{margin:12px 0 0}}
-@media (prefers-reduced-motion:reduce){.art i{animation:none}html{scroll-behavior:auto}}
-body{background:radial-gradient(circle at 8% 0%,rgba(255,92,138,.32),transparent 42%),radial-gradient(circle at 98% 6%,rgba(79,53,242,.34),transparent 45%),radial-gradient(circle at 85% 38%,rgba(255,201,60,.34),transparent 38%),var(--bg)}
-.hero h1{background:linear-gradient(90deg,var(--v),var(--p) 60%,#FF9A3C);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
-.btn{background:linear-gradient(90deg,var(--v),var(--p));box-shadow:0 8px 22px rgba(79,53,242,.32)}
-.btn:hover{background:linear-gradient(90deg,var(--p),#FF9A3C);filter:none}
-.btn.alt{background:transparent;box-shadow:none}
-.btn.tg{background:#229ED9;box-shadow:0 8px 22px rgba(34,158,217,.4);color:#fff}
-.btn.tg:hover{background:#1B86B9}
-nav a.tgl{background:#229ED9;color:#fff;padding:9px 18px;border-radius:999px}
-nav a.tgl:hover{background:#1B86B9;color:#fff}
-.art{filter:drop-shadow(0 18px 30px rgba(79,53,242,.35))}
-#services{background:rgba(79,53,242,.10)}
-#process{background:rgba(255,201,60,.20)}
-#contact{background:rgba(255,92,138,.14)}
-.dot{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:12px;vertical-align:-1px}
-.list button[aria-selected="true"]{border-color:var(--a,var(--v))}
-.panel{border:0;border-top:10px solid var(--a,var(--v));box-shadow:0 18px 40px rgba(22,19,43,.14)}
-.panel h3{color:var(--a,var(--v))}
-.steps li:nth-child(1){--a:#4F35F2}.steps li:nth-child(2){--a:#FF5C8A}.steps li:nth-child(3){--a:#FF9A3C}.steps li:nth-child(4){--a:#19C3A0}
-.steps li{border-top-color:var(--a);background:var(--card);border-radius:18px;padding:20px 18px;border-top-width:8px}
-.steps li::before{color:var(--a)}
-.tgrow{margin:0 0 28px}
-</style>
-</head>
-<body>
+:root{--bg:#FFE14D;--ink:#111;--card:#fff;--a:#FF4B3E;--b:#00B8A9;--c:#3B5BFF;--sh:#111;padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181F;--ink:#F5F5F0;--card:#242632;--sh:#FFE14D}}
+:root[data-theme="dark"]{--bg:#17181F;--ink:#F5F5F0;--card:#242632;--sh:#FFE14D}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Unbounded,Onest,sans-serif;line-height:1.1;margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.box{background:var(--card);border:3px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--sh)}
+.bar{position:sticky;top:0;z-index:50;background:var(--a);color:#fff;border-bottom:3px solid var(--ink);padding:8px 0;padding-top:calc(8px + env(safe-area-inset-top,0px));overflow:hidden;font-weight:600;white-space:nowrap}
+.bar div{display:inline-block;animation:mq 28s linear infinite}.bar span{padding:0 28px}
+@keyframes mq{to{transform:translateX(-50%)}}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:12px}
+.logo{font:800 22px Unbounded,sans-serif;text-decoration:none}
+nav a{margin-left:18px;text-decoration:none;font-weight:600}nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:14px 24px;border-radius:999px;font:600 17px Onest,sans-serif;text-decoration:none;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--sh);cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translate(-2px,-2px)}.btn.tg{background:#229ED9;color:#fff}.btn.w{background:var(--card);color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;padding:36px 0 70px}
+.hero h1{font-size:clamp(32px,5.2vw,58px);font-weight:800;letter-spacing:-.02em}
+.hero p{font-size:19px;margin:22px 0 28px;max-width:30em}.hero .btn{margin:0 10px 12px 0}
+.vf{position:relative;aspect-ratio:4/5;overflow:hidden;transform:rotate(2.5deg);background:var(--c);max-width:420px;justify-self:center;width:100%}
+.vf video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fb i{position:absolute;display:block;animation:fl 6s ease-in-out infinite alternate}
+.fb i:nth-child(1){width:55%;aspect-ratio:1;background:var(--bg);border-radius:50%;left:8%;top:10%}
+.fb i:nth-child(2){width:42%;aspect-ratio:1;background:var(--a);right:8%;top:42%;border-radius:14%;animation-delay:-2s}
+.fb i:nth-child(3){width:36%;aspect-ratio:1;background:var(--b);left:30%;bottom:6%;clip-path:polygon(50% 0,100% 100%,0 100%);animation-delay:-4s}
+@keyframes fl{to{transform:translateY(-10%) rotate(30deg)}}
+section{padding:64px 0}
+h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:12px}.lead{margin:0 0 32px;max-width:36em}
+.svc{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start}
+.list{display:flex;flex-direction:column;gap:8px}
+.list button{display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;width:100%;padding:14px 18px;border-radius:14px;border:3px solid var(--ink);background:var(--card);color:var(--ink);font:600 18px Onest,sans-serif;cursor:pointer}
+.list button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.list small{font-weight:400;font-size:14px;opacity:.75}
+.dot{display:inline-block;width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);margin-right:10px;vertical-align:-1px}
+.panel{padding:28px;min-height:290px;border-top:12px solid var(--a,var(--a))}
+.panel h3{font-size:24px;margin-bottom:12px}.panel ul{padding-left:20px;margin:0 0 18px}.panel .t{font-weight:600}
+.fl{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.fl button{padding:9px 18px;border-radius:999px;border:3px solid var(--ink);background:var(--card);color:var(--ink);font:600 16px Onest,sans-serif;cursor:pointer}
+.fl button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{overflow:hidden;display:flex;flex-direction:column}
+.card:nth-child(odd){transform:rotate(-.8deg)}.card:nth-child(even){transform:rotate(.8deg)}
+.md{aspect-ratio:4/3;border-bottom:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font:800 54px Unbounded,sans-serif;color:#fff;overflow:hidden}
+.md img,.md video{width:100%;height:100%;object-fit:cover;display:block}
+.cb{padding:16px}.cb h3{font-size:17px;margin-bottom:6px}.cb p{margin:6px 0 0;font-size:15px}
+.tag{display:inline-block;font-size:13px;font-weight:600;padding:2px 12px;border:2px solid var(--ink);border-radius:999px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{padding:20px 18px;counter-increment:s}.steps li::before{content:counter(s);display:block;font:800 30px Unbounded,sans-serif}
+.steps h3{font-size:18px;margin:6px 0}.steps p{margin:0;font-size:16px}
+.steps li:nth-child(1){background:#FFB3AD}.steps li:nth-child(2){background:#8FE8DF}.steps li:nth-child(3){background:#B4C2FF}.steps li:nth-child(4){background:#fff}
+.steps li{color:#111}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.info{padding:26px}.info h3{margin-bottom:12px;font-size:20px}.info .btn{margin:0 0 12px;display:block;text-align:center}
+.g{background:var(--b);color:#111;padding:14px 16px;border:3px solid var(--ink);border-radius:14px;font-weight:600;margin-top:14px}
+form{display:grid;gap:14px;padding:26px}label{font-weight:600;font-size:15px}
+input,select,textarea{width:100%;margin-top:6px;padding:13px 15px;border-radius:12px;border:3px solid var(--ink);background:var(--card);color:var(--ink);font:400 17px Onest,sans-serif}
+textarea{min-height:100px;resize:vertical}
+footer{border-top:3px solid var(--ink);padding:26px 0;font-size:15px}
+@media(max-width:820px){.hero,.svc,.ct{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}nav a:not(.tgl){display:none}.vf{max-width:300px}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.bar div{animation:none;white-space:normal}.bar span+span{display:none}.fb i{animation:none}html{scroll-behavior:auto}}
+</style></head><body>
+<div class="bar" role="note"><div><span>Гарантия: если проект вам не понравился, вы за него не платите</span><span>Гарантия: если проект вам не понравился, вы за него не платите</span><span>Гарантия: если проект вам не понравился, вы за него не платите</span><span>Гарантия: если проект вам не понравился, вы за него не платите</span></div></div>
 <div class="wrap">
-<header><a class="logo" href="#">Контур</a><nav><a href="#services">Услуги</a><a href="#process">Как работаем</a><a class="tgl" href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">Telegram</a></nav></header>
-<div class="hero">
-<div>
-<h1>Логотипы, видео и сайты, которые запоминаются</h1>
-<p>Делаем фирменный стиль, анимированные заставки, короткие рекламные ролики и сайты для бизнеса и личных брендов.</p>
-<a class="btn tg" href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">Заказать в Telegram</a><a class="btn alt" href="#services">Что мы делаем</a>
+<header><a class="logo" href="#">Контур</a><nav><a href="#services">Услуги</a><a href="#works">Работы</a><a href="#contact">Контакты</a><a class="tgl" href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">Telegram</a></nav></header>
+<div class="hero"><div>
+<h1>Придумаем, нарисуем и снимем то, что запомнят</h1>
+<p>Логотипы, анимированные заставки, короткие рекламные видео, сайты и визитки для вашего дела.</p>
+<a class="btn tg" href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">Заказать в Telegram</a><a class="btn w" href="tel:+998200120309">Позвонить</a>
 </div>
-<div class="art" aria-hidden="true"><i class="c"></i><i class="s"></i><i class="t"></i></div>
-</div>
-</div>
+<div class="vf box" id="vf"><div class="fb" aria-hidden="true"><i></i><i></i><i></i></div>
+<video id="hv" autoplay muted loop playsinline preload="auto"><source id="hs" src="hero.mp4" type="video/mp4"></video></div>
+</div></div>
 
-<section id="services"><div class="wrap">
-<h2>Услуги</h2>
-<p class="lead">Выберите направление, чтобы увидеть, что входит в работу.</p>
-<div class="svc">
-<div class="list" role="tablist" aria-label="Услуги" id="tabs"></div>
-<div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
-</div>
+<section id="services" style="background:var(--card);border-block:3px solid var(--ink)"><div class="wrap">
+<h2>Услуги</h2><p class="lead">Выберите направление, чтобы увидеть, что входит в работу.</p>
+<div class="svc"><div class="list" id="tabs" role="tablist" aria-label="Услуги"></div><div class="panel box" id="panel" aria-live="polite"></div></div>
 </div></section>
 
-<section id="process"><div class="wrap">
-<h2>Как мы работаем</h2>
-<p class="lead">Понятные шаги от заявки до готовых файлов.</p>
+<section id="works"><div class="wrap">
+<h2>Наши работы</h2><p class="lead">Выберите раздел, чтобы посмотреть проекты.</p>
+<div class="fl" id="fl"></div><div class="grid" id="grid"></div>
+</div></section>
+
+<section id="process" style="background:var(--card);border-block:3px solid var(--ink)"><div class="wrap">
+<h2>Как мы работаем</h2><p class="lead">Понятные шаги от заявки до готовых файлов.</p>
 <ol class="steps">
-<li><h3>Бриф</h3><p>Узнаём о вашем деле, аудитории и задаче.</p></li>
-<li><h3>Концепция</h3><p>Показываем направления и выбираем лучшее вместе.</p></li>
-<li><h3>Разработка</h3><p>Дорабатываем выбранный вариант, вносим правки.</p></li>
-<li><h3>Передача</h3><p>Отдаём исходники и файлы во всех нужных форматах.</p></li>
-</ol>
-</div></section>
+<li class="box"><h3>Бриф</h3><p>Узнаём о вашем деле, аудитории и задаче.</p></li>
+<li class="box"><h3>Концепция</h3><p>Показываем направления и выбираем лучшее вместе.</p></li>
+<li class="box"><h3>Разработка</h3><p>Дорабатываем выбранный вариант, вносим правки.</p></li>
+<li class="box"><h3>Передача</h3><p>Отдаём исходники и файлы во всех нужных форматах.</p></li>
+</ol></div></section>
 
 <section id="contact"><div class="wrap">
-<h2>Расскажите о проекте</h2>
-<p class="lead">Опишите задачу в паре предложений. Ответим и предложим сроки и стоимость.</p>
-<p class="tgrow"><a class="btn tg" href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">Написать в Telegram @Baxt1yor_4</a></p>
-<form id="f">
+<h2>Расскажите о проекте</h2><p class="lead">Напишите в Telegram, позвоните или оставьте заявку. Ответим и назовём сроки и стоимость.</p>
+<div class="ct">
+<div class="info box"><h3>Связаться</h3>
+<a class="btn tg" href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">Telegram @Baxt1yor_4</a>
+<a class="btn w" href="tel:+998200120309">+998 20 012 03 09</a>
+<a class="btn w" href="tel:+998933499019">+998 93 349 90 19</a>
+<div class="g">Если вам не понравился результат, оплата не нужна.</div></div>
+<form class="box" id="f">
 <div><label for="n">Ваше имя</label><input id="n" required autocomplete="name"></div>
 <div><label for="s">Что нужно</label><select id="s"></select></div>
 <div><label for="m">Задача</label><textarea id="m" placeholder="Например: нужен логотип для кофейни и визитки"></textarea></div>
 <div><label for="c">Телефон или Telegram</label><input id="c" required autocomplete="tel"></div>
 <button class="btn" type="submit">Отправить заявку</button>
-<p id="ok" hidden style="color:var(--v);font-weight:600;margin:0">Заявка готова. Если Telegram не открылся сам, <a id="tl" href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">откройте его здесь</a> и нажмите «Отправить».</p>
-</form>
-</div></section>
-
-<footer><div class="wrap">© Студия «Контур». Заказы принимаем в Telegram: <a href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">@Baxt1yor_4</a></div></footer>
+<p id="ok" hidden style="margin:0;font-weight:600"></p></form>
+</div></div></section>
+<footer><div class="wrap">© Студия «Контур». Telegram: <a href="https://t.me/Baxt1yor_4" target="_blank" rel="noopener">@Baxt1yor_4</a>. Телефоны: <a href="tel:+998200120309">+998 20 012 03 09</a>, <a href="tel:+998933499019">+998 93 349 90 19</a></div></footer>
 
 <script>
+var C=["#FF4B3E","#00B8A9","#3B5BFF","#FF9A1F","#E5389B","#7A5CFF"];
 var S=[
-{n:"Логотипы",s:"от идеи до знака",d:"Разработаем знак, который узнают и на вывеске, и на иконке в телефоне.",l:["2–3 концепции на выбор","Доработка выбранного варианта","Файлы для печати и для сайта","Короткие правила использования"],t:"Срок: 5–10 дней"},
-{n:"Заставки",s:"анимированное интро",d:"Анимация логотипа для начала видео, трансляции или презентации.",l:["Анимация логотипа 5–10 секунд","Версии для горизонтального и вертикального видео","Звуковое оформление по желанию"],t:"Срок: 3–7 дней"},
-{n:"Рекламные видео",s:"15–60 секунд",d:"Короткие ролики для соцсетей, сайта и рекламы: от сценария до монтажа.",l:["Сценарий и раскадровка","Графика, анимация и монтаж","Субтитры и музыка","Форматы под Instagram, TikTok, YouTube"],t:"Срок: 7–14 дней"},
+{n:"Логотипы",s:"от идеи до знака",d:"Разработаем знак, который узнают и на вывеске, и на иконке в телефоне.",l:["2–3 концепции на выбор","Доработка выбранного варианта","Файлы для печати и для сайта","Правила использования"],t:"Срок: 5–10 дней"},
+{n:"Заставки",s:"анимированное интро",d:"Анимация логотипа для начала видео, трансляции или презентации.",l:["Анимация 5–10 секунд","Версии для горизонтального и вертикального видео","Звук по желанию"],t:"Срок: 3–7 дней"},
+{n:"Рекламные видео",s:"15–60 секунд",d:"Короткие ролики для соцсетей, сайта и рекламы: от сценария до монтажа.",l:["Сценарий и раскадровка","Графика, анимация и монтаж","Субтитры и музыка","Форматы для Instagram, TikTok, YouTube"],t:"Срок: 7–14 дней"},
 {n:"Сайты",s:"лендинги и визитки в сети",d:"Быстрые сайты, которые хорошо выглядят на телефоне и приводят клиентов.",l:["Дизайн и вёрстка","Адаптация под телефоны","Форма заявки","Помощь с запуском"],t:"Срок: 7–21 день"},
 {n:"Визитки",s:"и печатные макеты",d:"Визитки, листовки и баннеры в едином стиле с вашим логотипом.",l:["Макет с учётом требований типографии","Электронная визитка для мессенджеров","Листовки, баннеры, афиши"],t:"Срок: 2–5 дней"},
-{n:"Фирменный стиль",s:"и другое",d:"Если нужен весь пакет: цвета, шрифты, шаблоны постов и презентаций. Опишите задачу, подберём состав работ.",l:["Брендбук","Шаблоны для соцсетей","Оформление презентаций"],t:"Срок: обсуждается"}];
-var C=["#4F35F2","#FF5C8A","#FF9A3C","#19C3A0","#E5389B","#2C8CFF"];
+{n:"Ваши идеи и предложения",s:"то, чего нет в списке",d:"Есть идея, которой нет в списке? Расскажите о ней, и мы придумаем, как её воплотить.",l:["Обсудим вашу идею","Предложим свои решения","Назовём сроки и стоимость"],t:"Срок: обсуждается"}];
 var tabs=document.getElementById("tabs"),panel=document.getElementById("panel"),sel=document.getElementById("s");
-function show(i){
+function show(i){var x=S[i],k=C[i%C.length];
 Array.prototype.forEach.call(tabs.children,function(b,j){b.setAttribute("aria-selected",j===i)});
-var x=S[i];panel.style.setProperty("--a",C[i%C.length]);tabs.style.setProperty("--a",C[i%C.length]);
-panel.innerHTML="<h3>"+x.n+"</h3><p>"+x.d+"</p><ul>"+x.l.map(function(e){return"<li>"+e+"</li>"}).join("")+"</ul><p class=\"term\">"+x.t+"</p><a class=\"btn\" href=\"#contact\" data-i=\""+i+"\">Заказать</a>";
-}
-S.forEach(function(x,i){
-var b=document.createElement("button");b.type="button";b.setAttribute("role","tab");
+panel.style.borderTopColor=k;
+panel.innerHTML="<h3>"+x.n+"</h3><p>"+x.d+"</p><ul>"+x.l.map(function(e){return"<li>"+e+"</li>"}).join("")+"</ul><p class=\"t\">"+x.t+"</p><a class=\"btn tg\" href=\"#contact\" data-i=\""+i+"\">Заказать</a>"}
+S.forEach(function(x,i){var b=document.createElement("button");b.type="button";b.setAttribute("role","tab");
 b.innerHTML="<span><i class=\"dot\" style=\"background:"+C[i%C.length]+"\"></i>"+x.n+"</span><small>"+x.s+"</small>";
 b.onclick=function(){show(i)};tabs.appendChild(b);
-var o=document.createElement("option");o.textContent=x.n;sel.appendChild(o);
-});
+var o=document.createElement("option");o.textContent=x.n;sel.appendChild(o)});
 panel.addEventListener("click",function(e){var a=e.target.closest("a[data-i]");if(a)sel.selectedIndex=+a.dataset.i});
 show(0);
+
+// видео на главном экране: если файла hero.mp4 нет, остаются фигуры
+var hs=document.getElementById("hs"),hv=document.getElementById("hv");
+hs.addEventListener("error",function(){hv.style.display="none"});
+
+// галерея: список работ читается из works.json
+var SAMPLE=[{title:"Пример: логотип",category:"Логотипы",text:"Здесь будет ваша работа"},{title:"Пример: рекламное видео",category:"Видео",text:"Здесь будет ваша работа"},{title:"Пример: сайт",category:"Сайты",text:"Здесь будет ваша работа"}];
+var fl=document.getElementById("fl"),grid=document.getElementById("grid"),W=[],cur="Все";
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+function draw(){grid.innerHTML="";W.forEach(function(w,i){if(cur!=="Все"&&w.category!==cur)return;
+var c=el("article","card box"),m=el("div","md");
+if(w.image){var im=el("img");im.src=w.image;im.alt=w.title;im.loading="lazy";m.appendChild(im)}
+else if(w.video){var v=el("video");v.src=w.video;if(w.poster)v.poster=w.poster;v.controls=true;if(w.fit){v.style.objectFit=w.fit;m.style.background="#000"}v.preload="metadata";v.playsInline=true;m.appendChild(v)}
+else{m.style.background=C[i%C.length];m.textContent=(w.title||"?").replace("Пример: ","").charAt(0).toUpperCase()}
+var b=el("div","cb");b.appendChild(el("span","tag",w.category||""));b.appendChild(el("h3","",w.title||""));
+if(w.text)b.appendChild(el("p","",w.text));
+if(w.url){var a=el("a","","Открыть");a.href=w.url;a.target="_blank";a.rel="noopener";b.appendChild(a)}
+c.appendChild(m);c.appendChild(b);grid.appendChild(c)})}
+function filters(){var cats=["Все"];W.forEach(function(w){if(w.category&&cats.indexOf(w.category)<0)cats.push(w.category)});
+fl.innerHTML="";cats.forEach(function(k){var b=el("button","",k);b.type="button";b.setAttribute("aria-pressed",k===cur);
+b.onclick=function(){cur=k;filters();draw()};fl.appendChild(b)})}
+fetch("works.json").then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){return SAMPLE}).then(function(d){W=Array.isArray(d)?d:SAMPLE;filters();draw()});
+
 document.getElementById("f").addEventListener("submit",function(e){
 e.preventDefault();
 var ok=document.getElementById("ok"),btn=e.target.querySelector("button");
 btn.disabled=true;ok.hidden=true;
 fetch("/api/order",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:n.value,service:sel.value,contact:c.value,message:m.value,site:""})})
-.then(function(r){if(!r.ok)throw 0;ok.textContent="Заявка отправлена. Мы скоро свяжемся с вами.";ok.style.color="var(--v)";e.target.reset();})
-.catch(function(){ok.innerHTML="Не удалось отправить. Напишите нам в <a href=\"https://t.me/Baxt1yor_4\" target=\"_blank\" rel=\"noopener\">Telegram</a>.";ok.style.color="#D63A5B";})
-.finally(function(){ok.hidden=false;btn.disabled=false;});
+.then(function(r){if(!r.ok)throw 0;ok.textContent="Заявка отправлена. Мы скоро свяжемся с вами.";e.target.reset()})
+.catch(function(){ok.innerHTML="Не удалось отправить. Напишите нам в <a href=\"https://t.me/Baxt1yor_4\" target=\"_blank\" rel=\"noopener\">Telegram</a>."})
+.finally(function(){ok.hidden=false;btn.disabled=false});
 });
-</script>
-</body>
-</html>
+</script></body></html>

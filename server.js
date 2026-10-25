@@ -36,6 +36,24 @@ async function sendToTelegram(o) {
   if (!r.ok) throw new Error("Telegram: " + r.status + " " + (await r.text()));
 }
 
+const MIME = { ".html": "text/html; charset=utf-8", ".json": "application/json; charset=utf-8", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".gif": "image/gif", ".svg": "image/svg+xml", ".mp4": "video/mp4", ".webm": "video/webm" };
+function serveFile(req, res, file) {
+  fs.stat(file, (e, st) => {
+    if (e || !st.isFile()) { res.writeHead(404); return res.end(); }
+    const type = MIME[path.extname(file).toLowerCase()] || "application/octet-stream";
+    const m = /bytes=(\d*)-(\d*)/.exec(req.headers.range || "");
+    if (m) { // частичная отдача нужна для видео на iPhone
+      const start = m[1] ? +m[1] : 0;
+      const end = m[2] ? Math.min(+m[2], st.size - 1) : st.size - 1;
+      if (start > end || start >= st.size) { res.writeHead(416); return res.end(); }
+      res.writeHead(206, { "Content-Type": type, "Content-Range": "bytes " + start + "-" + end + "/" + st.size, "Accept-Ranges": "bytes", "Content-Length": end - start + 1 });
+      return fs.createReadStream(file, { start, end }).pipe(res);
+    }
+    res.writeHead(200, { "Content-Type": type, "Content-Length": st.size, "Accept-Ranges": "bytes", "Cache-Control": "public, max-age=300" });
+    fs.createReadStream(file).pipe(res);
+  });
+}
+
 http.createServer((req, res) => {
   if (req.method === "POST" && req.url === "/api/order") {
     let body = "";
@@ -59,9 +77,13 @@ http.createServer((req, res) => {
     });
     return;
   }
-  if (req.method === "GET" && (req.url === "/" || req.url.startsWith("/?"))) {
-    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-    return res.end(fs.readFileSync(path.join(__dirname, "index.html")));
+  if (req.method === "GET" || req.method === "HEAD") {
+    let p;
+    try { p = decodeURIComponent(req.url.split("?")[0]); } catch (e) { p = ""; }
+    if (p === "/") p = "/index.html";
+    if (/^\/(index\.html|works\.json|hero\.(mp4|webm|jpg|webp)|works\/[^\/]+)$/.test(p) && !p.includes("..")) {
+      return serveFile(req, res, path.join(__dirname, p));
+    }
   }
   res.writeHead(404);
   res.end();
